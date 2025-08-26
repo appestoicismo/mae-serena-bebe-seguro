@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Protocolo de Hipnoterapia para Gestantes - Proteja o Futuro do Seu Bebê</title>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <style>
        * {
            margin: 0;
@@ -12,231 +13,131 @@
        }
 
        body {
-           font-family: 'Arial', sans-serif;
+           font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
            line-height: 1.6;
-           color: #333;
-           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           color: #4a5568;
+           background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #f3e8ff 100%);
            min-height: 100vh;
        }
 
        .container {
-           max-width: 800px;
-           margin: 0 auto;
-           padding: 20px;
+           max-width: 100%;
+           margin: 0;
+           padding: 0;
            background: white;
-           margin-top: 20px;
-           margin-bottom: 20px;
-           border-radius: 15px;
-           box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+           box-shadow: none;
        }
 
-       /* HIERARQUIA TIPOGRÁFICA DO HEADLINE */
+       /* HEADLINE OTIMIZADO PARA MOBILE */
        .headline {
            text-align: center;
-           background: linear-gradient(45deg, #dc3545, #c82333);
+           background: linear-gradient(135deg, #d53f8c 0%, #b83280 100%);
            color: white;
-           padding: 60px 30px;
-           margin: -20px -20px 40px -20px;
-           border-radius: 15px 15px 0 0;
+           padding: 24px 16px;
+           margin: 0;
+           position: relative;
+           overflow: hidden;
+       }
+
+       .headline::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+           opacity: 0.3;
        }
 
        .pre-headline {
-           font-size: 1.1em;
-           font-weight: 300;
-           letter-spacing: 2px;
+           font-size: 0.75rem;
+           font-weight: 500;
+           letter-spacing: 1px;
            opacity: 0.9;
-           margin-bottom: 15px;
+           margin-bottom: 8px;
            text-transform: uppercase;
+           position: relative;
+           z-index: 1;
        }
 
        .main-headline {
-           font-size: 3.2em;
-           font-weight: 900;
-           line-height: 1.1;
-           margin-bottom: 25px;
-           text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+           font-family: 'Playfair Display', serif;
+           font-size: 1.75rem;
+           font-weight: 700;
+           line-height: 1.2;
+           margin-bottom: 12px;
+           text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+           position: relative;
+           z-index: 1;
        }
 
        .sub-headline {
-           font-size: 1.6em;
+           font-size: 1rem;
            font-weight: 400;
-           line-height: 1.3;
-           margin-bottom: 20px;
+           line-height: 1.4;
+           margin-bottom: 8px;
            opacity: 0.95;
+           position: relative;
+           z-index: 1;
        }
 
        .supporting-text {
-           font-size: 1.1em;
+           font-size: 0.875rem;
            font-weight: 300;
            opacity: 0.85;
-           max-width: 600px;
+           max-width: 90%;
            margin: 0 auto;
+           position: relative;
+           z-index: 1;
        }
 
-       /* RESPONSIVIDADE DO HEADLINE */
-       @media (max-width: 768px) {
-           .headline {
-               padding: 40px 20px;
-           }
-           
-           .main-headline {
-               font-size: 2.2em;
-           }
-           
-           .sub-headline {
-               font-size: 1.3em;
-           }
-           
-           .pre-headline {
-               font-size: 0.9em;
-           }
-           
-           .supporting-text {
-               font-size: 1em;
-           }
-       }
-
-       /* RESTO DO CONTEÚDO */
+       /* SEÇÕES OTIMIZADAS */
        .section {
-           margin: 40px 0;
-           padding: 30px;
-           background: #f8f9fa;
-           border-radius: 10px;
-           border-left: 5px solid #007bff;
+           margin: 20px 0;
+           padding: 20px 16px;
+           background: white;
+           border-radius: 8px;
+           border-left: 3px solid #9f7aea;
+           box-shadow: 0 1px 3px rgba(0,0,0,0.1);
        }
 
        .section h2 {
-           color: #2c3e50;
-           margin-bottom: 20px;
-           font-size: 1.8em;
+           font-family: 'Playfair Display', serif;
+           color: #553c9a;
+           margin-bottom: 16px;
+           font-size: 1.25rem;
+           font-weight: 600;
+           line-height: 1.3;
        }
 
+       .section p {
+           font-size: 0.9rem;
+           line-height: 1.6;
+           margin-bottom: 12px;
+       }
+
+       /* DESTAQUES MAIS SUAVES */
        .highlight {
-           background: #fff3cd;
-           border: 1px solid #ffeaa7;
-           border-radius: 5px;
-           padding: 15px;
-           margin: 20px 0;
-           font-weight: bold;
+           background: linear-gradient(135deg, #fef5e7 0%, #fbb6ce 100%);
+           border: 1px solid #f687b3;
+           border-radius: 8px;
+           padding: 16px;
+           margin: 16px 0;
+           font-weight: 500;
+           font-size: 0.9rem;
+           line-height: 1.5;
        }
 
-       .testimonial {
-           background: white;
-           padding: 25px;
-           border-radius: 10px;
-           margin: 20px 0;
-           border-left: 5px solid #28a745;
-           box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-       }
-
-       .price-box {
-           background: linear-gradient(135deg, #28a745, #20c997);
-           color: white;
-           padding: 40px;
-           border-radius: 15px;
-           text-align: center;
-           margin: 30px 0;
-           position: relative;
-           overflow: hidden;
-       }
-
-       .price-box::before {
-           content: '';
-           position: absolute;
-           top: -50%;
-           left: -50%;
-           width: 200%;
-           height: 200%;
-           background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-           animation: shimmer 3s ease-in-out infinite;
-       }
-
-       @keyframes shimmer {
-           0%, 100% { transform: rotate(0deg); }
-           50% { transform: rotate(180deg); }
-       }
-
-       .original-price {
-           text-decoration: line-through;
-           opacity: 0.7;
-           font-size: 1.2em;
-       }
-
-       .current-price {
-           font-size: 3em;
-           font-weight: bold;
-           margin: 10px 0;
-       }
-
-       .guarantee {
-           background: #e8f5e8;
-           border: 2px solid #28a745;
-           border-radius: 10px;
-           padding: 30px;
-           text-align: center;
-           margin: 30px 0;
-       }
-
-       .cta-button {
-           display: block;
-           width: 100%;
-           max-width: 500px;
-           margin: 30px auto;
-           padding: 20px;
-           background: linear-gradient(45deg, #dc3545, #c82333);
-           color: white;
-           text-decoration: none;
-           border-radius: 50px;
-           font-size: 1.3em;
-           font-weight: bold;
-           text-align: center;
-           transition: all 0.3s ease;
-           text-transform: uppercase;
-           letter-spacing: 1px;
-           border: none;
-           cursor: pointer;
-           box-shadow: 0 10px 30px rgba(220, 53, 69, 0.3);
-       }
-
-       .cta-button:hover {
-           transform: translateY(-3px);
-           box-shadow: 0 15px 35px rgba(220, 53, 69, 0.4);
-       }
-
-       .countdown {
-           background: #dc3545;
-           color: white;
-           padding: 20px;
-           border-radius: 10px;
-           text-align: center;
-           margin: 20px 0;
-           font-weight: bold;
-       }
-
-       .features-list {
-           list-style: none;
-           padding: 0;
-       }
-
-       .features-list li {
-           padding: 10px 0;
-           border-bottom: 1px solid #eee;
-       }
-
-       .features-list li:before {
-           content: "✅";
-           margin-right: 10px;
-       }
-
+       /* DEPOIMENTOS COMPACTOS */
        .testimonial-modern {
            background: white;
-           padding: 20px 25px;
+           padding: 16px;
            border-radius: 12px;
-           margin: 20px 0;
-           box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-           border: 1px solid #e8e8e8;
+           margin: 16px 0;
+           box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+           border: 1px solid #e2e8f0;
            position: relative;
-           overflow: hidden;
        }
 
        .testimonial-modern::before {
@@ -245,20 +146,20 @@
            left: 0;
            top: 0;
            bottom: 0;
-           width: 4px;
-           background: #f0f0f0;
+           width: 3px;
+           background: linear-gradient(135deg, #d53f8c 0%, #b83280 100%);
            border-radius: 0 2px 2px 0;
        }
 
        .testimonial-header {
            display: flex;
-           align-items: flex-start;
+           align-items: center;
            margin-bottom: 12px;
        }
 
        .testimonial-avatar {
-           width: 48px;
-           height: 48px;
+           width: 40px;
+           height: 40px;
            border-radius: 50%;
            margin-right: 12px;
            object-fit: cover;
@@ -271,16 +172,16 @@
 
        .testimonial-name {
            font-weight: 600;
-           color: #2c3e50;
-           font-size: 1em;
+           color: #2d3748;
+           font-size: 0.9rem;
            margin-bottom: 2px;
            line-height: 1.3;
        }
 
        .testimonial-location {
-           color: #888;
-           font-size: 0.85em;
-           margin-bottom: 6px;
+           color: #718096;
+           font-size: 0.75rem;
+           margin-bottom: 4px;
            line-height: 1.2;
        }
 
@@ -291,28 +192,28 @@
        }
 
        .stars {
-           color: #ffb400;
-           font-size: 0.9em;
+           color: #f6ad55;
+           font-size: 0.8rem;
            letter-spacing: 1px;
        }
 
        .rating-text {
-           color: #888;
-           font-size: 0.85em;
-           margin-left: 6px;
+           color: #718096;
+           font-size: 0.75rem;
+           margin-left: 4px;
            font-weight: 500;
        }
 
        .testimonial-content {
-           color: #444;
+           color: #4a5568;
            line-height: 1.5;
            font-style: italic;
-           margin-bottom: 14px;
-           font-size: 0.92em;
+           margin-bottom: 12px;
+           font-size: 0.85rem;
        }
 
        .testimonial-highlight {
-           color: #4a90e2;
+           color: #3182ce;
            font-weight: 600;
            font-style: normal;
        }
@@ -321,8 +222,8 @@
            display: flex;
            justify-content: space-between;
            align-items: center;
-           font-size: 0.8em;
-           color: #888;
+           font-size: 0.75rem;
+           color: #718096;
        }
 
        .verified-purchase {
@@ -332,66 +233,274 @@
        }
 
        .verified-icon {
-           color: #4caf50;
-           font-size: 0.9em;
+           color: #48bb78;
+           font-size: 0.8rem;
        }
 
-       .testimonials-stats {
-           background: #f9f9f9;
-           border: 1px solid #e8e8e8;
-           border-radius: 8px;
-           padding: 12px 20px;
+       /* CAIXA DE PREÇO COMPACTA */
+       .price-box {
+           background: linear-gradient(135deg, #9f7aea 0%, #805ad5 100%);
+           color: white;
+           padding: 24px 16px;
+           border-radius: 12px;
            text-align: center;
-           margin-top: 20px;
-           color: #666;
-           font-size: 0.85em;
+           margin: 20px 0;
+           position: relative;
+           overflow: hidden;
+       }
+
+       .price-box::before {
+           content: '';
+           position: absolute;
+           top: -50%;
+           left: -50%;
+           width: 200%;
+           height: 200%;
+           background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+           animation: shimmer 4s ease-in-out infinite;
+       }
+
+       @keyframes shimmer {
+           0%, 100% { transform: rotate(0deg); }
+           50% { transform: rotate(180deg); }
+       }
+
+       .price-box h2 {
+           font-size: 1.1rem;
+           margin-bottom: 8px;
+           position: relative;
+           z-index: 1;
+       }
+
+       .price-box h3 {
+           font-size: 0.9rem;
+           margin-bottom: 12px;
+           opacity: 0.9;
+           position: relative;
+           z-index: 1;
+       }
+
+       .original-price {
+           text-decoration: line-through;
+           opacity: 0.7;
+           font-size: 0.9rem;
+           position: relative;
+           z-index: 1;
+       }
+
+       .current-price {
+           font-size: 2rem;
+           font-weight: bold;
+           margin: 8px 0;
+           position: relative;
+           z-index: 1;
+       }
+
+       /* BOTÃO CTA OTIMIZADO */
+       .cta-button {
+           display: block;
+           width: calc(100% - 32px);
+           margin: 20px 16px;
+           padding: 16px 20px;
+           background: linear-gradient(135deg, #d53f8c 0%, #b83280 100%);
+           color: white;
+           text-decoration: none;
+           border-radius: 12px;
+           font-size: 1rem;
+           font-weight: 600;
+           text-align: center;
+           transition: all 0.3s ease;
+           text-transform: uppercase;
+           letter-spacing: 0.5px;
+           border: none;
+           cursor: pointer;
+           box-shadow: 0 4px 12px rgba(213, 63, 140, 0.3);
+           position: relative;
+           overflow: hidden;
+       }
+
+       .cta-button::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: -100%;
+           width: 100%;
+           height: 100%;
+           background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+           transition: left 0.5s;
+       }
+
+       .cta-button:hover::before {
+           left: 100%;
+       }
+
+       .cta-button:hover {
+           transform: translateY(-2px);
+           box-shadow: 0 6px 16px rgba(213, 63, 140, 0.4);
+       }
+
+       /* COUNTDOWN COMPACTO */
+       .countdown {
+           background: linear-gradient(135deg, #d53f8c 0%, #b83280 100%);
+           color: white;
+           padding: 16px;
+           border-radius: 8px;
+           text-align: center;
+           margin: 16px 0;
+           font-weight: 600;
+           font-size: 0.9rem;
+       }
+
+       /* LISTA DE RECURSOS OTIMIZADA */
+       .features-list {
+           list-style: none;
+           padding: 0;
+       }
+
+       .features-list li {
+           padding: 8px 0;
+           border-bottom: 1px solid #e2e8f0;
+           font-size: 0.9rem;
+           line-height: 1.5;
+       }
+
+       .features-list li:before {
+           content: "✅";
+           margin-right: 8px;
+           font-size: 0.8rem;
+       }
+
+       .features-list li:last-child {
+           border-bottom: none;
+       }
+
+       /* GARANTIA COMPACTA */
+       .guarantee {
+           background: linear-gradient(135deg, #faf5ff 0%, #e9d8fd 100%);
+           border: 2px solid #9f7aea;
+           border-radius: 12px;
+           padding: 20px 16px;
+           text-align: center;
+           margin: 20px 0;
+       }
+
+       .guarantee h2 {
+           font-size: 1.1rem;
+           color: #553c9a;
+           margin-bottom: 8px;
+       }
+
+       .guarantee h3 {
+           font-size: 0.9rem;
+           color: #553c9a;
+           margin-bottom: 12px;
+       }
+
+       .guarantee p {
+           font-size: 0.85rem;
+           line-height: 1.5;
+           margin-bottom: 8px;
+       }
+
+       /* ESTATÍSTICAS DOS DEPOIMENTOS */
+       .testimonials-stats {
+           background: #f7fafc;
+           border: 1px solid #e2e8f0;
+           border-radius: 8px;
+           padding: 12px 16px;
+           text-align: center;
+           margin-top: 16px;
+           color: #718096;
+           font-size: 0.8rem;
            font-weight: 500;
        }
 
-       @media (max-width: 768px) {
+       /* RESPONSIVIDADE MELHORADA */
+       @media (min-width: 768px) {
            .container {
-               margin: 10px;
-               padding: 15px;
+               max-width: 600px;
+               margin: 20px auto;
+               border-radius: 16px;
+               box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+           }
+           
+           .headline {
+               padding: 40px 32px;
+               border-radius: 16px 16px 0 0;
+           }
+           
+           .main-headline {
+               font-size: 2.25rem;
+           }
+           
+           .sub-headline {
+               font-size: 1.125rem;
+           }
+           
+           .section {
+               padding: 24px 32px;
+               margin: 24px 0;
+           }
+           
+           .cta-button {
+               width: calc(100% - 64px);
+               margin: 24px 32px;
+               padding: 18px 24px;
+               font-size: 1.1rem;
+           }
+       }
+
+       /* MELHORIAS PARA ACESSIBILIDADE */
+       @media (prefers-reduced-motion: reduce) {
+           .cta-button::before,
+           .price-box::before {
+               animation: none;
+           }
+           
+           .cta-button:hover {
+               transform: none;
+           }
+       }
+
+       /* OTIMIZAÇÕES PARA TELAS PEQUENAS */
+       @media (max-width: 375px) {
+           .main-headline {
+               font-size: 1.5rem;
            }
            
            .current-price {
-               font-size: 2em;
+               font-size: 1.75rem;
            }
            
-           .testimonial-modern {
-               padding: 18px 20px;
+           .section {
+               padding: 16px 12px;
            }
            
-           .testimonial-avatar {
-               width: 44px;
-               height: 44px;
-           }
-           
-           .testimonial-footer {
-               flex-direction: column;
-               gap: 6px;
-               align-items: flex-start;
+           .cta-button {
+               width: calc(100% - 24px);
+               margin: 16px 12px;
+               padding: 14px 16px;
+               font-size: 0.9rem;
            }
        }
    </style>
 </head>
 <body>
    <div class="container">
-       <!-- HEADLINE COM HIERARQUIA TIPOGRÁFICA -->
+       <!-- HEADLINE OTIMIZADO -->
        <div class="headline">
-           <div class="pre-headline">🚨 ALERTA</div>
-           <h1 class="main-headline">SUA ANSIEDADE ESTÁ SILENCIOSAMENTE PROGRAMANDO SEU BEBÊ PARA TER TDAH</h1>
-           <h2 class="sub-headline">Descubra Como um Protocolo Científico de 9 Sessões Pode Proteger o Cérebro do Seu Filho e Garantir um Futuro Brilhante</h2>
+           <div class="pre-headline">🚨 IMPORTANTE</div>
+           <h1 class="main-headline">Sua Ansiedade Pode Estar Programando Seu Bebê Para Ter TDAH</h1>
+           <h2 class="sub-headline">Protocolo científico de 9 sessões protege o cérebro do seu filho e garante um futuro brilhante</h2>
        </div>
 
        <div class="section">
-           <h2>⚠️ O PROBLEMA OCULTO QUE NINGUÉM TE CONTA</h2>
-         <!-- Adicione a imagem aqui -->
-<div style="text-align: center; margin: 20px 0;">
-    <img src="https://mae-serena-bebe-seguro.dantashipnoterapia.com.br/gravida.jpg" 
-         alt="Gestante tranquila - Mãe Serena Bebê Seguro" 
-         style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+           <h2>⚠️ O Problema Que Ninguém Te Conta</h2>
+           <div style="text-align: center; margin: 16px 0;">
+               <img src="https://mae-serena-bebe-seguro.dantashipnoterapia.com.br/gravida.jpg" 
+                    alt="Gestante tranquila - Mãe Serena Bebê Seguro" 
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+           </div>
            <p>Você sabia que sua ansiedade durante a gestação pode ser mais perigosa para seu bebê do que você imagina?</p>
            
            <div class="highlight">
@@ -409,22 +518,21 @@
        </div>
 
        <div class="section">
-           <h2>📊 O PESO DA EVIDÊNCIA CIENTÍFICA</h2>
+           <h2>📊 Evidência Científica</h2>
            
            <div class="highlight">
                <p><strong>85% DE AUMENTO NO RISCO DE TDAH</strong></p>
-               <p>Esta é a realidade assustadora: ansiedade materna no primeiro trimestre pode aumentar em até 85% o risco de a criança desenvolver Transtorno de Déficit de Atenção e Hiperatividade.</p>
+               <p>Ansiedade materna no primeiro trimestre pode aumentar em até 85% o risco de a criança desenvolver Transtorno de Déficit de Atenção e Hiperatividade.</p>
            </div>
 
-           <p><strong>ESTUDO 1:</strong> Pesquisa publicada no Journal of the Canadian Academy of Child and Adolescent Psychiatry revelou que mães com alto estresse durante a gravidez têm 2.4 VEZES MAIS CHANCES de ter filhos com TDAH.</p>
+           <p><strong>ESTUDO 1:</strong> Pesquisa no Journal of the Canadian Academy of Child and Adolescent Psychiatry revelou que mães com alto estresse têm 2.4 VEZES MAIS CHANCES de ter filhos com TDAH.</p>
 
-           <p><strong>ESTUDO 2:</strong> Análise de 847 gestantes mostrou que a hipnoterapia reduziu a ansiedade em 4.2 pontos (estatisticamente significativo) e manteve os benefícios por 6+ meses.</p>
+           <p><strong>ESTUDO 2:</strong> Análise de 847 gestantes mostrou que a hipnoterapia reduziu a ansiedade em 4.2 pontos e manteve os benefícios por 6+ meses.</p>
        </div>
 
        <div class="section">
-           <h2>💡 A SOLUÇÃO: PROTOCOLO DE HIPNOTERAPIA</h2>
-           <h3>🎯 PROTOCOLO COMPLETO DE HIPNOTERAPIA PARA GESTANTES</h3>
-           <p><strong>9 Sessões Científicas Para Proteger o Futuro do Seu Bebê</strong></p>
+           <h2>💡 A Solução: Protocolo de Hipnoterapia</h2>
+           <h3>🎯 9 Sessões Para Proteger Seu Bebê</h3>
 
            <ul class="features-list">
                <li><strong>SESSÃO 1:</strong> Avaliação e Primeira Proteção</li>
@@ -440,11 +548,11 @@
        </div>
 
        <div class="section">
-           <h2>✨ BENEFÍCIOS COMPROVADOS</h2>
+           <h2>✨ Benefícios Comprovados</h2>
            
            <h3>Para Você:</h3>
            <ul class="features-list">
-               <li>Redução de 60-80% na ansiedade já nas primeiras sessões</li>
+               <li>Redução de 60-80% na ansiedade nas primeiras sessões</li>
                <li>Diminuição de 45-70% nos níveis de cortisol</li>
                <li>Melhoria de 85% na qualidade do sono</li>
                <li>Eliminação de 90% das preocupações obsessivas</li>
@@ -461,7 +569,7 @@
        </div>
 
        <div class="section">
-           <h2>⭐ O que dizem as mães que protegeram seus bebês:</h2>
+           <h2>⭐ Depoimentos de Mães</h2>
            
            <div class="testimonial-modern">
                <div class="testimonial-header">
@@ -477,7 +585,7 @@
                </div>
                
                <div class="testimonial-content">
-                   "Estava no meu primeiro trimestre apavorada com tudo que li sobre ansiedade e TDAH. O protocolo foi <span class="testimonial-highlight">transformador</span>. Em apenas 2 semanas consegui dormir a noite toda novamente. Meu bebê nasceu super tranquilo e hoje, com 8 meses, é uma criança extremamente focada. <span class="testimonial-highlight">Valeu cada centavo investido no futuro dele.</span>"
+                   "Estava no primeiro trimestre apavorada. O protocolo foi <span class="testimonial-highlight">transformador</span>. Em 2 semanas consegui dormir a noite toda. Meu bebê nasceu super tranquilo e hoje, com 8 meses, é extremamente focado. <span class="testimonial-highlight">Valeu cada centavo.</span>"
                </div>
                
                <div class="testimonial-footer">
@@ -503,7 +611,7 @@
                </div>
                
                <div class="testimonial-content">
-                   "Minha primeira filha tem TDAH e eu me culpava muito. Quando engravidei novamente, estava em pânico total. Este protocolo <span class="testimonial-highlight">mudou completamente minha gestação</span>. As técnicas funcionaram desde a primeira sessão! Meu segundo filho nasceu e a diferença é impressionante - ele se concentra, dorme bem, é super calmo. <span class="testimonial-highlight">Recomendo de olhos fechados!</span>"
+                   "Minha primeira filha tem TDAH e eu me culpava. Quando engravidei novamente, estava em pânico. Este protocolo <span class="testimonial-highlight">mudou completamente minha gestação</span>. A diferença é impressionante! <span class="testimonial-highlight">Recomendo de olhos fechados!</span>"
                </div>
                
                <div class="testimonial-footer">
@@ -529,7 +637,7 @@
                </div>
                
                <div class="testimonial-content">
-                   "Vivia acordada de madrugada com o coração disparado, imaginando tudo que poderia dar errado. Era uma tortura! Depois do protocolo, minha ansiedade <span class="testimonial-highlight">simplesmente desapareceu</span>. Consegui criar um vínculo lindo com meu bebê ainda na barriga. Hoje ele tem 1 ano e meio e é uma criança super inteligente e tranquila. <span class="testimonial-highlight">Melhor investimento da minha vida!</span>"
+                   "Vivia acordada de madrugada com o coração disparado. Era uma tortura! Depois do protocolo, minha ansiedade <span class="testimonial-highlight">simplesmente desapareceu</span>. Hoje ele tem 1 ano e meio e é super inteligente e tranquilo. <span class="testimonial-highlight">Melhor investimento da minha vida!</span>"
                </div>
                
                <div class="testimonial-footer">
@@ -547,13 +655,13 @@
        </div>
 
        <div class="countdown">
-           <h3>⏰ OFERTA ESPECIAL LIMITADA</h3>
-           <p>RESTAM APENAS <span id="spots-remaining">47</span> VAGAS COM DESCONTO</p>
+           <h3>⏰ OFERTA LIMITADA</h3>
+           <p>RESTAM <span id="spots-remaining">47</span> VAGAS COM DESCONTO</p>
        </div>
 
        <div class="price-box">
-           <h2>🎁 OFERTA ESPECIAL LIMITADA</h2>
-           <h3>PROTOCOLO COMPLETO DE HIPNOTERAPIA PARA GESTANTES</h3>
+           <h2>🎁 OFERTA ESPECIAL</h2>
+           <h3>PROTOCOLO COMPLETO DE HIPNOTERAPIA</h3>
            
            <div class="original-price">
                <p>VALOR NORMAL: R$ 74,00</p>
@@ -563,10 +671,10 @@
                R$ 47,90
            </div>
            
-           <p>ou 12x de R$ 49,75</p>
+           <p style="position: relative; z-index: 1;">ou 12x de R$ 4,16</p>
            
-           <h3>O QUE VOCÊ RECEBE:</h3>
-           <ul class="features-list">
+           <h3 style="margin-top: 16px; position: relative; z-index: 1;">O QUE VOCÊ RECEBE:</h3>
+           <ul class="features-list" style="position: relative; z-index: 1;">
                <li>9 SESSÕES COMPLETAS DE HIPNOTERAPIA</li>
                <li>ÁUDIOS PERSONALIZADOS PARA CASA</li>
                <li>MANUAL COMPLETO DA GESTANTE PROTEGIDA</li>
@@ -576,224 +684,170 @@
                <li>ACESSO VITALÍCIO AOS MATERIAIS</li>
            </ul>
 
-           <div style="margin-top: 30px;">
+           <div style="margin-top: 20px; position: relative; z-index: 1;">
                <p><strong>DESCONTO DE MAIS DE 80%!</strong></p>
            </div>
        </div>
 
+       <button class="cta-button" onclick="redirectToCheckout()">
+           🛡️ PROTEGER MEU BEBÊ AGORA! 🛡️<br>
+           <span style="font-size: 0.8em; font-weight: 400;">✅ Apenas R$ 47,90 (12x de R$ 4,16)</span>
+       </button>
+
        <div class="section">
-           <h2>⚡ POR QUE VOCÊ PRECISA AGIR AGORA?</h2>
+           <h2>⚡ Por Que Agir Agora?</h2>
            
            <div class="highlight">
-               <p><strong>1. CADA DIA IMPORTA NO DESENVOLVIMENTO FETAL</strong><br>
-               O cérebro do seu bebê está se desenvolvendo AGORA. Cada dia de ansiedade não tratada é uma oportunidade perdida de proteção neurológica.</p>
+               <p><strong>CADA DIA IMPORTA</strong><br>
+               O cérebro do seu bebê está se desenvolvendo AGORA. Cada dia de ansiedade não tratada é uma oportunidade perdida.</p>
            </div>
 
            <div class="highlight">
-               <p><strong>2. PRIMEIRO TRIMESTRE É CRÍTICO</strong><br>
-               Se você está no primeiro trimestre, está na janela mais importante para prevenção de TDAH. Não desperdice este período crucial.</p>
+               <p><strong>PRIMEIRO TRIMESTRE É CRÍTICO</strong><br>
+               Se você está no primeiro trimestre, está na janela mais importante para prevenção de TDAH.</p>
            </div>
 
            <div class="highlight">
-               <p><strong>3. VAGAS LIMITADAS</strong><br>
-               Apenas 50 gestantes terão acesso a este preço especial. Depois disso, o valor aumentará drasticamente.</p>
+               <p><strong>VAGAS LIMITADAS</strong><br>
+               Apenas 50 gestantes terão acesso a este preço especial.</p>
            </div>
-
-           <p><strong>O Que Acontece Se Você Não Agir Agora?</strong></p>
-           
-           <p><strong>CENÁRIO 1:</strong> Você continua com ansiedade durante a gestação</p>
-           <ul>
-               <li>Níveis de cortisol permanecem elevados</li>
-               <li>Risco de TDAH aumenta progressivamente</li>
-               <li>Desenvolvimento do córtex pré-frontal comprometido</li>
-               <li>Possíveis problemas comportamentais futuros</li>
-           </ul>
-
-           <p><strong>CENÁRIO 2:</strong> Você age agora e protege seu bebê</p>
-           <ul>
-               <li>Ansiedade reduzida em até 80%</li>
-               <li>Ambiente intrauterino otimizado</li>
-               <li>Desenvolvimento neurológico protegido</li>
-               <li>Futuro brilhante garantido para seu filho</li>
-           </ul>
        </div>
 
        <div class="guarantee">
-           <h2>🛡️ GARANTIA TOTAL DE SATISFAÇÃO</h2>
-           <h3>GARANTIA INCONDICIONAL DE 07 DIAS</h3>
+           <h2>🛡️ GARANTIA TOTAL</h2>
+           <h3>7 DIAS INCONDICIONAL</h3>
            
            <p><strong>GARANTIA 100% LIVRE DE RISCOS:</strong></p>
-           <p>Se por qualquer motivo você não ficar completamente satisfeita com o Protocolo de Hipnoterapia para Gestantes, você tem 07 dias completos para solicitar o reembolso total do seu investimento.</p>
-           
-           <p><strong>Não precisa justificar. Não precisa explicar. Basta solicitar.</strong></p>
+           <p>Se não ficar satisfeita, você tem 7 dias para solicitar reembolso total. Não precisa justificar.</p>
            
            <div class="highlight">
-               <p>Além da garantia financeira, oferecemos uma garantia emocional: este protocolo é 100% seguro para você e seu bebê. Não há efeitos colaterais, não há riscos, apenas benefícios comprovados cientificamente.</p>
+               <p>Protocolo 100% seguro para você e seu bebê. Sem efeitos colaterais, sem riscos, apenas benefícios comprovados.</p>
            </div>
        </div>
 
        <div class="section">
-           <h2>🎯 AINDA EM DÚVIDA? CONSIDERE ISTO:</h2>
+           <h2>🎯 Considere o Custo de Não Agir</h2>
            
            <div class="highlight">
                <p><strong>QUANTO CUSTA NÃO AGIR:</strong></p>
                <ul>
-                   <li>Consultas com neurologista infantil: R$ 300-500 cada</li>
-                   <li>Medicação para TDAH: R$ 200-400 por mês</li>
-                   <li>Terapia comportamental: R$ 150-300 por sessão</li>
-                   <li>Reforço escolar: R$ 80-150 por hora</li>
-                   <li>Sofrimento emocional da criança: INCALCULÁVEL</li>
+                   <li>Consultas com neurologista: R$ 300-500 cada</li>
+                   <li>Medicação para TDAH: R$ 200-400/mês</li>
+                   <li>Terapia comportamental: R$ 150-300/sessão</li>
+                   <li>Reforço escolar: R$ 80-150/hora</li>
+                   <li>Sofrimento emocional: INCALCULÁVEL</li>
                </ul>
-               <p><strong>TOTAL ESTIMADO AO LONGO DA INFÂNCIA: R$ 50.000 - R$ 100.000</strong></p>
+               <p><strong>TOTAL ESTIMADO: R$ 50.000 - R$ 100.000</strong></p>
            </div>
 
-           <p style="text-align: center; font-size: 1.3em; font-weight: bold; color: #28a745;">
+           <p style="text-align: center; font-size: 1.1rem; font-weight: 600; color: #48bb78;">
                Versus R$ 47,90 para PREVENIR tudo isso.
-           </p>
-           
-           <p style="text-align: center; font-size: 1.2em;">
-               A matemática é simples. A escolha é óbvia.
            </p>
        </div>
 
        <div class="section">
-           <h2>❓ PERGUNTAS FREQUENTES</h2>
+           <h2>❓ Perguntas Frequentes</h2>
            
            <div class="highlight">
                <p><strong>"A hipnoterapia é segura durante a gestação?"</strong></p>
-               <p>Absolutamente! A hipnoterapia é uma das intervenções mais seguras que existem. Não envolve medicamentos, não tem efeitos colaterais e é recomendada por organizações médicas internacionais para gestantes.</p>
+               <p>Absolutamente! É uma das intervenções mais seguras. Sem medicamentos, sem efeitos colaterais.</p>
            </div>
 
            <div class="highlight">
-               <p><strong>"Eu nunca fiz hipnose. Vai funcionar comigo?"</strong></p>
-               <p>Sim! Todas as pessoas são hipnotizáveis em algum grau. O protocolo foi desenvolvido especificamente para gestantes, incluindo técnicas adaptadas para diferentes níveis de receptividade.</p>
+               <p><strong>"Nunca fiz hipnose. Vai funcionar?"</strong></p>
+               <p>Sim! Todas as pessoas são hipnotizáveis. O protocolo foi desenvolvido especificamente para gestantes.</p>
            </div>
 
            <div class="highlight">
-               <p><strong>"Quanto tempo leva para ver resultados?"</strong></p>
-               <p>A maioria das gestantes relata melhoria significativa já na primeira sessão. Redução da ansiedade, melhoria do sono e sensação de calma são percebidas imediatamente.</p>
-           </div>
-
-           <div class="highlight">
-               <p><strong>"Posso fazer o protocolo em qualquer trimestre?"</strong></p>
-               <p>Sim, embora o primeiro trimestre seja o mais crítico para prevenção de TDAH. Gestantes em qualquer trimestre se beneficiam enormemente do protocolo.</p>
+               <p><strong>"Quanto tempo para ver resultados?"</strong></p>
+               <p>A maioria relata melhoria já na primeira sessão. Redução da ansiedade e melhoria do sono são imediatas.</p>
            </div>
        </div>
 
        <div class="countdown">
-           <h2>🚨 ÚLTIMO AVISO</h2>
-           <h3>SUA ÚLTIMA CHANCE DE PROTEGER SEU BEBÊ</h3>
-           <p>Esta página pode sair do ar a qualquer momento.</p>
-           <p>Quando atingirmos as 50 vagas, esta oferta especial será encerrada permanentemente.</p>
-           <p><strong>RESTAM APENAS <span id="spots-remaining-2">47</span> VAGAS</strong></p>
+           <h2>🚨 ÚLTIMA CHANCE</h2>
+           <h3>PROTEJA SEU BEBÊ AGORA</h3>
+           <p>Esta oferta pode sair do ar a qualquer momento.</p>
+           <p><strong>RESTAM <span id="spots-remaining-2">47</span> VAGAS</strong></p>
        </div>
 
-       <div style="text-align: center; margin: 40px 0;">
-           <h2>🎯 CLIQUE AGORA E PROTEJA SEU BEBÊ</h2>
+       <div style="text-align: center; margin: 20px 0;">
+           <h2 style="font-family: 'Playfair Display', serif; color: #2d3748; margin-bottom: 16px;">🎯 Clique e Proteja Seu Bebê</h2>
            
-           <!-- PLACEHOLDER PARA CHECKOUT KWIFY -->
-           <div id="kwify-checkout-placeholder" style="background: #f8f9fa; border: 2px dashed #007bff; padding: 40px; border-radius: 10px; margin: 20px 0;">
-               <h3 style="color: #007bff; margin-bottom: 20px;">🔗 INTEGRAÇÃO KWIFY - CHECKOUT</h3>
-               <p style="color: #666; margin-bottom: 15px;">Substitua este bloco pelo código de checkout da Kwify</p>
-               <p style="color: #666; font-size: 0.9em;">Exemplo de integração:</p>
-               <code style="background: #e9ecef; padding: 10px; display: block; border-radius: 5px; margin: 10px 0;">
-                   &lt;script src="https://kwify.com.br/checkout.js"&gt;&lt;/script&gt;<br>
-                   &lt;div id="kwify-checkout" data-product-id="SEU_PRODUTO_ID"&gt;&lt;/div&gt;
-               </code>
+           <button class="cta-button" onclick="redirectToCheckout()">
+               🛡️ SIM, QUERO PROTEGER MEU BEBÊ! 🛡️<br>
+               <span style="font-size: 0.8em; font-weight: 400;">✅ Apenas R$ 47,90 (12x de R$ 4,16)</span>
+           </button>
+
+           <div style="margin-top: 16px; font-size: 0.85rem; color: #4a5568;">
+               <p>✅ Acesso Imediato e Vitalício</p>
+               <p>✅ Garantia Incondicional de 7 Dias</p>
+               <p>✅ Protocolo Completo + Bônus</p>
            </div>
+       </div>
 
-           <!-- Botão alternativo para quando não houver integração -->
-          <button class="cta-button" onclick="redirectToCheckout()">
-              🛡️ SIM, QUERO PROTEGER MEU BEBÊ AGORA! 🛡️<br>
-              <span style="font-size: 0.8em;">✅ Apenas R$ 47,90 (12x de R$ 4,16)</span>
-          </button>
+       <div style="text-align: center; padding: 20px 16px; background: #f7fafc; border-radius: 8px; margin-top: 20px;">
+           <h3 style="font-family: 'Playfair Display', serif; color: #2d3748; margin-bottom: 16px; font-size: 1.1rem;">Imagine-se Daqui a 5 Anos...</h3>
+           
+           <div style="margin: 20px 0;">
+               <div style="padding: 16px; background: #fed7d7; border-radius: 8px; border-left: 3px solid #e53e3e; margin-bottom: 16px;">
+                   <h4 style="color: #c53030; margin-bottom: 8px; font-size: 0.9rem;">CENÁRIO 1: Você não agiu</h4>
+                   <p style="font-size: 0.85rem; line-height: 1.5;">Seu filho na escola, com dificuldades de atenção. A professora sugere avaliação para TDAH. Você pensa: "E se eu tivesse feito o protocolo?"</p>
+               </div>
+               
+               <div style="padding: 16px; background: #c6f6d5; border-radius: 8px; border-left: 3px solid #48bb78;">
+                   <h4 style="color: #2f855a; margin-bottom: 8px; font-size: 0.9rem;">CENÁRIO 2: Você agiu hoje</h4>
+                   <p style="font-size: 0.85rem; line-height: 1.5;">Seu filho é focado, inteligente e equilibrado. Outros pais perguntam seu "segredo". Você sorri, sabendo que fez a escolha certa.</p>
+               </div>
+           </div>
+           
+           <h3 style="color: #2d3748; margin-top: 20px; font-size: 1rem;">Qual cenário você escolhe?</h3>
+       </div>
 
-          <div style="margin-top: 20px;">
-              <p>✅ Acesso Imediato e Vitalício</p>
-              <p>✅ Garantia Incondicional de 07 Dias</p>
-              <p>✅ Protocolo Completo + Bônus</p>
-          </div>
+       <div style="text-align: center; margin: 20px 0; padding: 20px 16px; background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%); color: white; border-radius: 12px;">
+           <h2 style="font-size: 1.1rem; margin-bottom: 12px;">⚠️ AVISO FINAL</h2>
+           <p style="font-size: 1rem; margin-bottom: 16px;">O desenvolvimento neurológico acontece apenas UMA VEZ na vida.</p>
+           <p style="font-size: 0.9rem; margin-bottom: 16px;">Você não terá uma segunda chance.</p>
+           
+           <button class="cta-button" onclick="redirectToCheckout()" style="background: white; color: #c53030; margin: 16px 0;">
+               🛡️ PROTEGER MEU BEBÊ AGORA! 🛡️
+           </button>
+       </div>
 
-          <div class="countdown" style="margin-top: 30px;">
-              <p><strong>⏰ RESTAM APENAS <span id="spots-remaining-3">47</span> VAGAS</strong></p>
-              <p>Não deixe seu bebê pagar o preço da sua indecisão.</p>
-              <p>Cada segundo que passa é uma oportunidade perdida de proteção neurológica.</p>
-          </div>
-      </div>
+       <div style="text-align: center; padding: 16px; color: #718096; font-size: 0.8rem; border-top: 1px solid #e2e8f0; margin-top: 20px;">
+           <p>Protocolo baseado em evidências científicas. Resultados podem variar. Não substitui acompanhamento médico.</p>
+           <p style="margin-top: 8px;">
+               <strong>Desenvolvido por:</strong> Especialistas em Hipnoterapia Perinatal<br>
+               <strong>Baseado em:</strong> Mais de 200 estudos científicos<br>
+               <strong>Testado com:</strong> Centenas de gestantes
+           </p>
+       </div>
+   </div>
 
-      <div style="text-align: center; padding: 40px 20px; background: #f8f9fa; border-radius: 10px; margin-top: 40px;">
-          <h3 style="color: #2c3e50; margin-bottom: 20px;">Imagine-se Daqui a 5 Anos...</h3>
-          
-          <div style="display: flex; justify-content: space-between; gap: 30px; margin: 30px 0;">
-              <div style="flex: 1; padding: 20px; background: #ffebee; border-radius: 10px; border-left: 5px solid #dc3545;">
-                  <h4 style="color: #dc3545; margin-bottom: 15px;">CENÁRIO 1: Você não agiu</h4>
-                  <p>Seu filho está na escola, com dificuldades de atenção. A professora sugere avaliação para TDAH. Você se lembra desta página e pensa: "E se eu tivesse feito o protocolo?"</p>
-              </div>
-              
-              <div style="flex: 1; padding: 20px; background: #e8f5e8; border-radius: 10px; border-left: 5px solid #28a745;">
-                  <h4 style="color: #28a745; margin-bottom: 15px;">CENÁRIO 2: Você agiu hoje</h4>
-                  <p>Seu filho é uma criança focada, inteligente e equilibrada. Outros pais perguntam seu "segredo". Você sorri, sabendo que fez a escolha certa quando mais importava.</p>
-              </div>
-          </div>
-          
-          <h3 style="color: #2c3e50; margin-top: 30px;">Qual cenário você escolhe?</h3>
-      </div>
+   <script>
+       function updateSpotCounter() {
+           const spots = [47, 46, 45, 44, 43, 42, 41, 40];
+           let currentSpot = 0;
 
-      <div style="text-align: center; margin: 40px 0; padding: 20px; background: #dc3545; color: white; border-radius: 10px;">
-          <h2>⚠️ AVISO FINAL</h2>
-          <p style="font-size: 1.2em; margin-bottom: 20px;">O desenvolvimento neurológico acontece apenas UMA VEZ na vida.</p>
-          <p style="font-size: 1.1em;">Você não terá uma segunda chance.</p>
-          
-          <button class="cta-button" onclick="redirectToCheckout()" style="margin-top: 20px; background: white; color: #dc3545;">
-              🛡️ PROTEGER MEU BEBÊ AGORA! 🛡️
-          </button>
-      </div>
+           setInterval(() => {
+               if (currentSpot < spots.length - 1) {
+                   currentSpot++;
+                   const remainingSpots = spots[currentSpot];
+                   
+                   document.getElementById('spots-remaining').textContent = remainingSpots;
+                   document.getElementById('spots-remaining-2').textContent = remainingSpots;
+               }
+           }, 120000);
+       }
 
-      <div style="text-align: center; padding: 20px; color: #666; font-size: 0.9em; border-top: 1px solid #eee; margin-top: 40px;">
-          <p>Protocolo desenvolvido com base em evidências científicas atualizadas. Resultados podem variar individualmente. Este material não substitui acompanhamento médico profissional.</p>
-          <p style="margin-top: 10px;">
-              <strong>Desenvolvido por:</strong> Especialistas em Hipnoterapia Perinatal e Neurociência Fetal<br>
-              <strong>Baseado em:</strong> Mais de 200 estudos científicos internacionais<br>
-              <strong>Testado com:</strong> Centenas de gestantes com resultados comprovados
-          </p>
-      </div>
-  </div>
+       function redirectToCheckout() {
+           alert('Redirecionando para checkout...\n\nAqui você integraria com a Kwify ou seu gateway de pagamento preferido.');
+       }
 
-  <script>
-      function updateSpotCounter() {
-          // Simular diminuição de vagas
-          const spots = [47, 46, 45, 44, 43, 42, 41, 40];
-          let currentSpot = 0;
-
-          setInterval(() => {
-              if (currentSpot < spots.length - 1) {
-                  currentSpot++;
-                  const remainingSpots = spots[currentSpot];
-                  
-                  // Atualizar todos os contadores de vagas
-                  document.getElementById('spots-remaining').textContent = remainingSpots;
-                  document.getElementById('spots-remaining-2').textContent = remainingSpots;
-                  document.getElementById('spots-remaining-3').textContent = remainingSpots;
-              }
-          }, 120000); // A cada 2 minutos
-      }
-
-      function redirectToCheckout() {
-          // Aqui você pode integrar com a Kwify ou redirecionar para checkout
-          // Exemplo de redirecionamento:
-          // window.location.href = 'https://pay.kwify.com.br/seu-produto-id';
-          
-          // Para demonstração, mostrar alerta
-          alert('Redirecionando para checkout...\n\nAqui você integraria com a Kwify ou seu gateway de pagamento preferido.');
-          
-          // Opcional: abrir em nova janela
-          // window.open('https://pay.kwify.com.br/seu-produto-id', '_blank');
-      }
-
-      // Inicializar contador quando a página carregar
-      document.addEventListener('DOMContentLoaded', function() {
-          updateSpotCounter();
-      });
-  </script>
+       document.addEventListener('DOMContentLoaded', function() {
+           updateSpotCounter();
+       });
+   </script>
 </body>
 </html>
+
